@@ -37,9 +37,9 @@ import {
             label: "FORK YES",
             parameters: [
               {
-                patternDescription: "Say HIGHER",
+                // patternDescription: "Say HIGHER",
                 name: "memo",
-                label: "Send a message on-chain using a Memo",
+                label: "Say HIGHER!",
                 type: "textarea",
               },
             ],
@@ -47,7 +47,7 @@ import {
           {
               href: "/api/actions/poll",
               label: "NGMI",
-          }
+          },
         ],
       },
     };

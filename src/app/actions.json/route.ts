@@ -3,6 +3,11 @@ import { createActionHeaders, type ActionsJson } from "@solana/actions";
 export const GET = async () => {
   const payload: ActionsJson = {
     rules: [
+      // map all routes under /api/actions/poll to an action
+      {
+        pathPattern: "/api/actions/poll/*",
+        apiPath: "/api/actions/poll/*",
+      },
       // map all root level routes to an action
       {
         pathPattern: "/*",
